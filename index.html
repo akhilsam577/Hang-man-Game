@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css">
+    <script  defer src="script.js"></script> -->
+    <title>Hangman</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Hangman</h1>
+        <div class="sub-title">Find the hidden word - Enter a letter</div>
+      </div>
+      <div class="hangman-container">
+        <svg
+          height="200"
+          width="300"
+          id="hangman"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        ></svg>
+        <div class="wrong-words">
+          <div class="wrong-words--title">Wrong</div>
+          <div class="wrong-words--content"></div>
+        </div>
+      </div>
+      <div class="word-container"></div>
+    </div>
+    <div class="popup">
+      <span class="popup-message">Contratulations! You Won! 😄</span>
+      <button class="btn btn-restart" data-ns-test="play-button">
+        Play Again
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

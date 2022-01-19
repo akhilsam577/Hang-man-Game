@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 63.5%;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.sub-title {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+body {
+  background-color: #34495e;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hangman-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+svg {
+  fill: white;
+}
+
+.wrong-words {
+  align-self: stretch;
+  display: flex;
+  width: 22rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.wrong-words--title {
+  font-size: 1.8rem;
+}
+
+.wrong-words--content {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.word-container {
+  padding-bottom: 7rem;
+}
+
+.word-box {
+  display: inline-block;
+  padding: 0.4rem 0;
+  font-size: 2rem;
+  width: 2rem;
+  border-bottom: 2px #2980b9 solid;
+}
+
+.word-box:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 2rem;
+  background-color: #2980b9;
+}
+
+.popup-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: none;
+  padding: 1rem;
+  color: #2980b9;
+}
+
+.btn:focus {
+  outline: none;
+}
